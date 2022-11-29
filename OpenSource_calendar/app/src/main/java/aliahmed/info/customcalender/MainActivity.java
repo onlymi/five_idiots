@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     boolean sameDay = tapedDay.get(Calendar.YEAR) == tapedDay.get(Calendar.YEAR) &&
                             today.get(Calendar.DAY_OF_YEAR) == tapedDay.get(Calendar.DAY_OF_YEAR);
                     if (today.after(tapedDay) && !sameDay) {
-                        Toast.makeText(MainActivity.this, "You can't select previous date.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "이전 날짜는 선택하실 수 없습니다.", Toast.LENGTH_LONG).show();
                     } else {
                         if (initialDate == null && lastDate == null) {
                             initialDate = lastDate = (Date) adapterView.getAdapter().getItem((int) l);
