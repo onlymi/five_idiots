@@ -2,7 +2,8 @@
 Hanyang University - Open Source Team Project
 
 This project is related with aliahmedbd/CustomClickableCalender
-
+***
+# Time line
 
 2022/11/17 - make repository
 
@@ -12,7 +13,8 @@ This project is related with aliahmedbd/CustomClickableCalender
 
 2022/11/30 - make switch screen branch
 
-
+***
+# Function
 *날짜 메모기능
 
     *클릭 액션구현(페이지 추가 방식)(Memo.java) – 뇌아정, 염승민, 김주형
