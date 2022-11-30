@@ -16,6 +16,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import android.content.Intent; // 화면전환 용도
+
+
 public class MainActivity extends AppCompatActivity {
     List<Date> selectedDates;
     Date start, end;
@@ -67,30 +70,34 @@ public class MainActivity extends AppCompatActivity {
 
                     Calendar tapedDay = Calendar.getInstance();
                     tapedDay.setTime((Date) adapterView.getAdapter().getItem((int) l));
-                    boolean sameDay = tapedDay.get(Calendar.YEAR) == tapedDay.get(Calendar.YEAR) &&
-                            today.get(Calendar.DAY_OF_YEAR) == tapedDay.get(Calendar.DAY_OF_YEAR);
-                    if (today.after(tapedDay) && !sameDay) {
-                        Toast.makeText(MainActivity.this, "이전 날짜는 선택하실 수 없습니다.", Toast.LENGTH_LONG).show();
-                    } else {
-                        if (initialDate == null && lastDate == null) {
-                            initialDate = lastDate = (Date) adapterView.getAdapter().getItem((int) l);
-                        } else {
-                            initialDate = lastDate;
+//                    boolean sameDay = tapedDay.get(Calendar.YEAR) == tapedDay.get(Calendar.YEAR) &&
+//                            today.get(Calendar.DAY_OF_YEAR) == tapedDay.get(Calendar.DAY_OF_YEAR);
+//                    if (today.after(tapedDay) && !sameDay) { // 이전 날짜 선택시 메세지 출력하는 부분
+//                        Toast.makeText(MainActivity.this, "이전 날짜는 선택하실 수 없습니다.", Toast.LENGTH_LONG).show();
+////                    } else {
+//                        if (initialDate == null && lastDate == null) {
+//                            initialDate = lastDate = (Date) adapterView.getAdapter().getItem((int) l);
+//                        } else {
+//                            initialDate = lastDate;
                             lastDate = (Date) adapterView.getAdapter().getItem((int) l);
-                        }
-                        if (initialDate != null && lastDate != null)
-                            calendarCustomView.setRangesOfDate(makeDateRanges());
-                    }
+//                        }
+//                        if (initialDate != null && lastDate != null) // 날짜 범위 화면에 표시해주는 부분
+//                            calendarCustomView.setRangesOfDate(makeDateRanges());
+//                        }
                 }
                 try {
-                    Toast.makeText(MainActivity.this, "Start Date: " + initialDate.toString() + "\n End Date: " + lastDate.toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "선택한 날짜: " + lastDate.toString(), Toast.LENGTH_LONG).show();
+
+                    // 날짜 클릭 시 Memo 화면으로 화면전환
+                    Intent intent = new Intent(getApplicationContext(), Memo.class);
+                    startActivity(intent);
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
 
             }
         });
-
 
     }
 
