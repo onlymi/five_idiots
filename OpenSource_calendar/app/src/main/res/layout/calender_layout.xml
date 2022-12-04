@@ -145,9 +145,4 @@
         android:numColumns="7"
         android:verticalSpacing="4sp" />
 
-    <Button
-        android:id="@+id/add_meno"
-        android:layout_width="189dp"
-        android:layout_height="157dp"
-        android:text="메모 추가" />
 </LinearLayout>

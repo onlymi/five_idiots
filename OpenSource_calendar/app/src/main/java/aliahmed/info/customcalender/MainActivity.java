@@ -1,5 +1,6 @@
 package aliahmed.info.customcalender;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,37 +21,45 @@ import android.content.Intent; // 화면전환 용도
 
 
 public class MainActivity extends AppCompatActivity {
-    List<Date> selectedDates;
-    Date start, end;
     LinearLayout layoutCalender;
     View custom_view;
-    Date initialDate, lastDate;
+    Date lastDate;
+
+    // check() 를 위한 선언
+    List<EventObjects> mEvents;
+    public int event_count = 1;
+
+    // MemoActivity 에서 MainActivity 의 메소드 사용을 위함
+    public static Context mainContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainContext = this;
         setInitializations();
         setCalenderView();
     }
 
     private void setInitializations() {
-        custom_view = (View) findViewById(R.id.custom_view);
-        layoutCalender = (LinearLayout) findViewById(R.id.layoutCalender);
+        custom_view = findViewById(R.id.custom_view);
+        layoutCalender = findViewById(R.id.layoutCalender);
     }
 
     public void setCalenderView() {
 
         //Custom Events
-        EventObjects eventObjects = new EventObjects(1, "Birth", new Date());
+        EventObjects eventObjects = new EventObjects(0, "Today", new Date());
         eventObjects.setColor(R.color.colorPrimary);
-        List<EventObjects> mEvents = new ArrayList<>();
+        mEvents = new ArrayList<>();
         mEvents.add(eventObjects);
 
         ViewGroup parent = (ViewGroup) custom_view.getParent();
         parent.removeView(custom_view);
         layoutCalender.removeAllViews();
         layoutCalender.setOrientation(LinearLayout.VERTICAL);
+
+        check(2022, 12, 1); //test
 
         final CalendarCustomView calendarCustomView = new CalendarCustomView(this, mEvents);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
@@ -70,20 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Calendar tapedDay = Calendar.getInstance();
                     tapedDay.setTime((Date) adapterView.getAdapter().getItem((int) l));
-//                    boolean sameDay = tapedDay.get(Calendar.YEAR) == tapedDay.get(Calendar.YEAR) &&
-//                            today.get(Calendar.DAY_OF_YEAR) == tapedDay.get(Calendar.DAY_OF_YEAR);
-//                    if (today.after(tapedDay) && !sameDay) { // 이전 날짜 선택시 메세지 출력하는 부분
-//                        Toast.makeText(MainActivity.this, "이전 날짜는 선택하실 수 없습니다.", Toast.LENGTH_LONG).show();
-////                    } else {
-//                        if (initialDate == null && lastDate == null) {
-//                            initialDate = lastDate = (Date) adapterView.getAdapter().getItem((int) l);
-//                        } else {
-//                            initialDate = lastDate;
                             lastDate = (Date) adapterView.getAdapter().getItem((int) l);
-//                        }
-//                        if (initialDate != null && lastDate != null) // 날짜 범위 화면에 표시해주는 부분
-//                            calendarCustomView.setRangesOfDate(makeDateRanges());
-//                        }
                 }
                 try {
                     Toast.makeText(MainActivity.this, "선택한 날짜: " + lastDate.toString(), Toast.LENGTH_LONG).show();
@@ -101,25 +97,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public List<EventObjects> makeDateRanges() {
-        if (lastDate.after(initialDate)) {
-            start = initialDate;
-            end = lastDate;
-        } else {
-            start = lastDate;
-            end = initialDate;
-        }
-        List<EventObjects> eventObjectses = new ArrayList<>();
-        GregorianCalendar gcal = new GregorianCalendar();
-        gcal.setTime(start);
-
-        while (!gcal.getTime().after(end)) {
-            Date d = gcal.getTime();
-            EventObjects eventObject = new EventObjects("", d);
-            eventObject.setColor(getResources().getColor(R.color.colorAccent));
-            eventObjectses.add(eventObject);
-            gcal.add(Calendar.DATE, 1);
-        }
-        return eventObjectses;
+    public void check(int year, int month, int day){
+        EventObjects eventObjects = new EventObjects(event_count, "Memo", new Date(year, month-1, day));
+        eventObjects.setColor(R.color.colorPrimary);
+        mEvents.add(eventObjects);
+        event_count++;
     }
 }

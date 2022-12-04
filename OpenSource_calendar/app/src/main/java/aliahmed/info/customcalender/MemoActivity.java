@@ -1,4 +1,5 @@
 package aliahmed.info.customcalender;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -10,14 +11,17 @@ import java.util.ArrayList;
 
 public class MemoActivity extends AppCompatActivity{
     ListView listView;
+    public static Context memoContext;
+
     @Override
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_layout);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        memoContext = this;
         ArrayList<String> data = new ArrayList<>();
-        addMemo(data,2, 3, "test"); // test case
+        addMemo(data, 2022, 12, 21, "test"); //test
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, data);
@@ -27,8 +31,9 @@ public class MemoActivity extends AppCompatActivity{
         listView.setAdapter(adapter);
     }
 
-    public void addMemo(ArrayList<String> data, int month, int day, String memo){
+    public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
         data.add(month +"월 "+ day +"일: " + memo);
+        //((MainActivity)MainActivity.mainContext).check(year, month, day);
     }
 
 }
