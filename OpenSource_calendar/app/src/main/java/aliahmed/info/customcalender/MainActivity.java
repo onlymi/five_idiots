@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "선택한 날짜: " + lastDate.toString(), Toast.LENGTH_LONG).show();
 
                     // 날짜 클릭 시 Memo 화면으로 화면전환
-                    Intent intent = new Intent(getApplicationContext(), Memo.class);
+                    Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
                     startActivity(intent);
 
                 } catch (Exception e) {
