@@ -6,9 +6,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -24,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layoutCalender;
     View custom_view;
     Date lastDate;
+
+    // 메모추가 버튼
+    Button btn;
 
     // check() 를 위한 선언
     List<EventObjects> mEvents;
@@ -95,6 +102,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 메모추가 버튼 누를 시 팝업 다일러로그
+        View.OnClickListener listener = new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, PopupActivity.class);
+                startActivityForResult(intent, 1);
+            }
+        };
+        btn = (Button)findViewById(R.id.button_dialog);
+        btn.setOnClickListener(listener);
+
     }
 
     public void check(int year, int month, int day){
@@ -103,4 +121,5 @@ public class MainActivity extends AppCompatActivity {
         mEvents.add(eventObjects);
         event_count++;
     }
+
 }

@@ -134,6 +134,7 @@
             android:gravity="center"
             android:text="@string/sat"
             android:textColor="@color/colorBlack" />
+
     </LinearLayout>
 
     <aliahmed.info.customcalender.ExpandableHeightGridView
@@ -144,5 +145,11 @@
         android:horizontalSpacing="4sp"
         android:numColumns="7"
         android:verticalSpacing="4sp" />
+
+    <Button
+        android:id="@+id/button_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메모추가" />
 
 </LinearLayout>

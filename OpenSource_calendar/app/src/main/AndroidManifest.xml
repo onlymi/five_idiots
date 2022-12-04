@@ -20,6 +20,9 @@
         <activity android:name=".MemoActivity"
             android:parentActivityName=".MainActivity"
             />
+
+        <activity android:name=".PopupActivity"
+            android:theme="@style/popupTheme" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
