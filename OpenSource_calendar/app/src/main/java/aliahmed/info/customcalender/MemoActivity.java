@@ -17,9 +17,7 @@ public class MemoActivity extends AppCompatActivity{
         setContentView(R.layout.listview_layout);
 
         ArrayList<String> data = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
-            data.add("List data = " + i);
-        }
+        addMemo(data,2, 3, "test"); // test case
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, data);
@@ -28,4 +26,9 @@ public class MemoActivity extends AppCompatActivity{
         listView = findViewById(R.id.listview);
         listView.setAdapter(adapter);
     }
+
+    public void addMemo(ArrayList<String> data, int month, int day, String memo){
+        data.add(month +"월 "+ day +"일: " + memo);
+    }
+
 }
