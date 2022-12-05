@@ -29,9 +29,4 @@ public class MemoActivity extends AppCompatActivity{
         listView.setAdapter(adapter);
     }
 
-    public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
-        data.add(month +"월 "+ day +"일: " + memo);
-        ((MainActivity)MainActivity.mainContext).check(year, month+1, day);
-    }
-
 }

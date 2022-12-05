@@ -7,10 +7,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
+
 
 public class PopupActivity extends AppCompatActivity {
 
@@ -42,7 +41,7 @@ public class PopupActivity extends AppCompatActivity {
         ArrayList<String> data = Data.data;
         EditText memo = findViewById(R.id.memo);
         String memo_convert = memo.getText().toString();
-        ((MemoActivity)MemoActivity.memoContext).addMemo(data, mYear, mMonth, mDay, memo_convert);
+        ((MainActivity)MainActivity.mainContext).addMemo(data, mYear, mMonth, mDay, memo_convert);
         finish();
     }
 

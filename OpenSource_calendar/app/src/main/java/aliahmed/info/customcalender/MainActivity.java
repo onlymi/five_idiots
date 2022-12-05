@@ -1,5 +1,7 @@
 package aliahmed.info.customcalender;
 
+import static aliahmed.info.customcalender.Data.eventObjects;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,7 +25,6 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 import android.content.Intent; // 화면전환 용도
-
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout layoutCalender;
@@ -57,9 +58,7 @@ public class MainActivity extends AppCompatActivity {
     public void setCalenderView() {
 
         //Custom Events
-        EventObjects eventObjects = new EventObjects(0, "Today", new Date());
         eventObjects.setColor(R.color.colorPrimary);
-        //mEvents = new ArrayList<>();
         mEvents.add(eventObjects);
 
         ViewGroup parent = (ViewGroup) custom_view.getParent();
@@ -119,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
         eventObjects.setColor(R.color.colorPrimary);
         mEvents.add(eventObjects);
         event_count++;
+    }
+
+    public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
+        data.add(month +"월 "+ day +"일: " + memo);
+        check(year, month+1, day);
     }
 
 }
