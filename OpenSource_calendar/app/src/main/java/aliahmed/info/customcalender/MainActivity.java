@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
 
     // check() 를 위한 선언
-    List<EventObjects> mEvents;
-    public int event_count = 1;
+    List<EventObjects> mEvents = Data.mEvents;
+    public int event_count = Data.event_count;
 
     // MemoActivity 에서 MainActivity 의 메소드 사용을 위함
     public static Context mainContext;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         //Custom Events
         EventObjects eventObjects = new EventObjects(0, "Today", new Date());
         eventObjects.setColor(R.color.colorPrimary);
-        mEvents = new ArrayList<>();
+        //mEvents = new ArrayList<>();
         mEvents.add(eventObjects);
 
         ViewGroup parent = (ViewGroup) custom_view.getParent();
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCalender.removeAllViews();
         layoutCalender.setOrientation(LinearLayout.VERTICAL);
 
-        check(2022, 12, 1); //test
+        //check(2022, 12, 1); //test
 
         final CalendarCustomView calendarCustomView = new CalendarCustomView(this, mEvents);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
@@ -103,10 +104,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // 메모추가 버튼 누를 시 팝업 다일러로그
+//        View.OnClickListener listener = new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Intent intent = new Intent(MainActivity.this, PopupActivity.class);
+//                startActivityForResult(intent, 1);
+//            }
+//        };
+//        btn = (Button)findViewById(R.id.button_dialog);
+//        btn.setOnClickListener(listener);
+
+        // 메모추가 버튼 누를 시 날짜 선택기
         View.OnClickListener listener = new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, PopupActivity.class);
+                Intent intent = new Intent(MainActivity.this, DatePickerActivity.class);
                 startActivityForResult(intent, 1);
             }
         };

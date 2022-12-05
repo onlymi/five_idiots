@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class MemoActivity extends AppCompatActivity{
     ListView listView;
     public static Context memoContext;
-
+    public ArrayList<String> data = Data.data;
     @Override
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class MemoActivity extends AppCompatActivity{
         setContentView(R.layout.listview_layout);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         memoContext = this;
-        ArrayList<String> data = new ArrayList<>();
-        addMemo(data, 2022, 12, 21, "test"); //test
+
+        //addMemo(data, 2022, 12, 21, "test"); //test
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, data);
@@ -33,7 +33,7 @@ public class MemoActivity extends AppCompatActivity{
 
     public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
         data.add(month +"월 "+ day +"일: " + memo);
-        //((MainActivity)MainActivity.mainContext).check(year, month, day);
+        ((MainActivity)MainActivity.mainContext).check(year, month+1, day);
     }
 
 }

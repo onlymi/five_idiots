@@ -21,30 +21,29 @@
     </LinearLayout>
 
 
-
     <LinearLayout
-        android:padding="24dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
         <TextView
             android:id="@+id/txtText"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:text="수정 요망"
-            android:gravity="center"
-            android:layout_marginBottom="3dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="메모"
+            android:textColor="#000"
+            android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/txtText2"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:gravity="center"
-            android:layout_marginBottom="3dp"
+        <EditText
+            android:id="@+id/memo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="메모를 입력해주세요" />
 
     </LinearLayout>
 
