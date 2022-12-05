@@ -10,7 +10,6 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
-
 public class PopupActivity extends AppCompatActivity {
 
     Button okBtn, cancleBtn;
@@ -46,7 +45,6 @@ public class PopupActivity extends AppCompatActivity {
         finish();
 
     }
-
 
     //취소 버튼 클릭
     public void mCancle(View v){

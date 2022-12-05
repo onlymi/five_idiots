@@ -12,7 +12,6 @@ import java.util.ArrayList;
 public class MemoActivity extends AppCompatActivity{
     ListView listView;
     public static Context memoContext;
-    public ArrayList<String> data = Data.data;
     @Override
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,7 +21,7 @@ public class MemoActivity extends AppCompatActivity{
         memoContext = this;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1, data);
+                (this, android.R.layout.simple_list_item_1, Data.data);
 
         // 뷰에 어댑터를 설정.
         listView = findViewById(R.id.listview);

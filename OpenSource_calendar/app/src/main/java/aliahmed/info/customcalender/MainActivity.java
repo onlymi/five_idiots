@@ -34,10 +34,6 @@ public class MainActivity extends AppCompatActivity {
     // 메모추가 버튼
     Button btn;
 
-    // check() 를 위한 선언
-    List<EventObjects> mEvents = Data.mEvents;
-    public int event_count = Data.event_count;
-
     // MemoActivity 에서 MainActivity 의 메소드 사용을 위함
     public static Context mainContext;
 
@@ -68,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Custom Events
         eventObjects.setColor(R.color.colorPrimary);
-        mEvents.add(eventObjects);
+        Data.mEvents.add(eventObjects);
 
         ViewGroup parent = (ViewGroup) custom_view.getParent();
         parent.removeView(custom_view);
         layoutCalender.removeAllViews();
         layoutCalender.setOrientation(LinearLayout.VERTICAL);
 
-        final CalendarCustomView calendarCustomView = new CalendarCustomView(this, mEvents);
+        final CalendarCustomView calendarCustomView = new CalendarCustomView(this, Data.mEvents);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.MATCH_PARENT);
@@ -123,20 +119,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void check(int year, int month, int day){
-        EventObjects eventObjects = new EventObjects(event_count, "Memo", new Date(year, month-1, day));
+        EventObjects eventObjects = new EventObjects(Data.event_count, "Memo", new Date(year, month-1, day));
         eventObjects.setColor(R.color.colorPrimary);
-        mEvents.add(eventObjects);
-        event_count++;
+        Data.mEvents.add(eventObjects);
+        Data.event_count++;
     }
 
     public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
         data.add(month +"월 "+ day +"일: " + memo);
         check(year, month+1, day);
-//        finish();//인텐트 종료
-//        overridePendingTransition(0, 0);//인텐트 효과 없애기
-//        Intent intent = getIntent(); //인텐트
-//        startActivity(intent); //액티비티 열기
-//        overridePendingTransition(0, 0);//인텐트 효과 없애기
     }
 
 }
