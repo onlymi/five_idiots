@@ -32,14 +32,6 @@ public class DatePickerActivity extends AppCompatActivity {
     }
 
     public void mOnClick(View v){
-        // 기존 코드
-//        Intent intent = new Intent();
-//        intent.putExtra("mYear",mYear);
-//        intent.putExtra("mMonth", mMonth);
-//        intent.putExtra("mDay", mDay);
-//        setResult(RESULT_OK, intent);
-//        finish();
-
         Intent intent = new Intent(DatePickerActivity.this, PopupActivity.class);
         intent.putExtra("mYear",mYear);
         intent.putExtra("mMonth", mMonth);

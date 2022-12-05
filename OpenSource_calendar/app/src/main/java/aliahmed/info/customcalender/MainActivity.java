@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity {
         layoutCalender.removeAllViews();
         layoutCalender.setOrientation(LinearLayout.VERTICAL);
 
-        //check(2022, 12, 1); //test
-
         final CalendarCustomView calendarCustomView = new CalendarCustomView(this, mEvents);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
@@ -102,17 +100,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        // 메모추가 버튼 누를 시 팝업 다일러로그
-//        View.OnClickListener listener = new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent intent = new Intent(MainActivity.this, PopupActivity.class);
-//                startActivityForResult(intent, 1);
-//            }
-//        };
-//        btn = (Button)findViewById(R.id.button_dialog);
-//        btn.setOnClickListener(listener);
 
         // 메모추가 버튼 누를 시 날짜 선택기
         View.OnClickListener listener = new View.OnClickListener(){

@@ -39,10 +39,7 @@ public class PopupActivity extends AppCompatActivity {
 
     //동작 버튼 클릭
     public void mOk(View v){
-        ArrayList<String> data = ((MemoActivity)MemoActivity.memoContext).data;
-//        int month = ((DatePickerActivity)DatePickerActivity.DatePickerContext).mMonth;
-//        int day = ((DatePickerActivity)DatePickerActivity.DatePickerContext).mDay;
-
+        ArrayList<String> data = Data.data;
         EditText memo = findViewById(R.id.memo);
         String memo_convert = memo.getText().toString();
         ((MemoActivity)MemoActivity.memoContext).addMemo(data, mYear, mMonth, mDay, memo_convert);

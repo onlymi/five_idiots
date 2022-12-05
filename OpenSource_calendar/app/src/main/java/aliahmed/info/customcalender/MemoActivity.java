@@ -21,8 +21,6 @@ public class MemoActivity extends AppCompatActivity{
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         memoContext = this;
 
-        //addMemo(data, 2022, 12, 21, "test"); //test
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, data);
 
