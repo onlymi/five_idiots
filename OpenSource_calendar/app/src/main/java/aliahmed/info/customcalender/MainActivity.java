@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
         setCalenderView();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        setContentView(R.layout.activity_main);
+        mainContext = this;
+        setInitializations();
+        setCalenderView();
+    }
+
     private void setInitializations() {
         custom_view = findViewById(R.id.custom_view);
         layoutCalender = findViewById(R.id.layoutCalender);
@@ -123,6 +132,11 @@ public class MainActivity extends AppCompatActivity {
     public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
         data.add(month +"월 "+ day +"일: " + memo);
         check(year, month+1, day);
+//        finish();//인텐트 종료
+//        overridePendingTransition(0, 0);//인텐트 효과 없애기
+//        Intent intent = getIntent(); //인텐트
+//        startActivity(intent); //액티비티 열기
+//        overridePendingTransition(0, 0);//인텐트 효과 없애기
     }
 
 }

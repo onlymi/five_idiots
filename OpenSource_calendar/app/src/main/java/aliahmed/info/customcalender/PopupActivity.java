@@ -42,7 +42,9 @@ public class PopupActivity extends AppCompatActivity {
         EditText memo = findViewById(R.id.memo);
         String memo_convert = memo.getText().toString();
         ((MainActivity)MainActivity.mainContext).addMemo(data, mYear, mMonth, mDay, memo_convert);
+        ((MainActivity)MainActivity.mainContext).onResume();
         finish();
+
     }
 
 
