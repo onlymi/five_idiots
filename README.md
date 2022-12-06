@@ -25,7 +25,9 @@ This project is related with aliahmedbd/CustomClickableCalender
 
     *클릭 액션구현(페이지 추가 방식)(MemoActivity.java) – 뇌아정, 염승민, 김주형
 
-    *날짜에 일정 표시(기존 class에 check()메소드 추가) - 김주형
+    *날짜에 일정 표시(기존 class에 check() 메소드 추가) - 김주형
+    
+    *메모 데이터 저장, 불러오기 (MainActivity.java 에 saveData(), loadData() 메소드 추가) - 김주형
 
 *알림 기능
 
