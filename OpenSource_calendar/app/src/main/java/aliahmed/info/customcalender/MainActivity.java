@@ -1,29 +1,24 @@
 package aliahmed.info.customcalender;
 
 import static aliahmed.info.customcalender.Data.eventObjects;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
-
+import java.util.StringTokenizer;
 import android.content.Intent; // 화면전환 용도
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loadData();
         mainContext = this;
         setInitializations();
         setCalenderView();
@@ -53,6 +49,31 @@ public class MainActivity extends AppCompatActivity {
         mainContext = this;
         setInitializations();
         setCalenderView();
+    }
+
+    public void loadData(){
+        try{
+            BufferedReader br = new BufferedReader(new FileReader(getFilesDir()+"/memo_data.txt"));
+            String readStr;
+            String str;
+            while(((str = br.readLine()) != null)){
+                readStr = "";
+                readStr += str;
+                StringTokenizer t = new StringTokenizer(readStr, ",");
+                int year = Integer.parseInt(t.nextToken());
+                int month = Integer.parseInt(t.nextToken());
+                int day = Integer.parseInt(t.nextToken());
+                String memo = t.nextToken();
+                addMemo(Data.data, year, month, day, memo);
+            }
+            br.close();
+
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+            Toast.makeText(this, "memo_data File not Found", Toast.LENGTH_SHORT).show();
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void setInitializations() {
@@ -82,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (adapterView.getAdapter().getView((int) l, null, null).getAlpha() == 0.4f) {
-                    Log.d("hello", "hello");
+                    Log.d("", "hello");
                 } else {
                     Calendar today = Calendar.getInstance();
                     today.setTime(new java.util.Date());
@@ -92,8 +113,6 @@ public class MainActivity extends AppCompatActivity {
                             lastDate = (Date) adapterView.getAdapter().getItem((int) l);
                 }
                 try {
-                    Toast.makeText(MainActivity.this, "선택한 날짜: " + lastDate.toString(), Toast.LENGTH_LONG).show();
-
                     // 날짜 클릭 시 Memo 화면으로 화면전환
                     Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
                     startActivity(intent);

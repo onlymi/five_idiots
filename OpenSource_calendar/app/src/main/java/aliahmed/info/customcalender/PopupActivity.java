@@ -1,13 +1,22 @@
 package aliahmed.info.customcalender;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class PopupActivity extends AppCompatActivity {
@@ -42,8 +51,28 @@ public class PopupActivity extends AppCompatActivity {
         String memo_convert = memo.getText().toString();
         ((MainActivity)MainActivity.mainContext).addMemo(data, mYear, mMonth, mDay, memo_convert);
         ((MainActivity)MainActivity.mainContext).onResume();
+        try{
+            saveData(memo_convert);
+        }
+        catch (IOException e){
+            System.out.println("File IOException");
+        }
         finish();
 
+    }
+
+    public void saveData(String memo) throws IOException{
+        try{
+            BufferedWriter bw = new BufferedWriter(new FileWriter(getFilesDir() + "/memo_data.txt", true));
+            bw.write(mYear + "," + mMonth + "," + mDay + "," + memo + "\n");
+            bw.close();
+            Toast.makeText(this,"저장완료", Toast.LENGTH_SHORT).show();
+            System.out.println("파일경로: " + getFilesDir());
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
     }
 
     //취소 버튼 클릭
