@@ -1,0 +1,4 @@
+#Thu Dec 08 15:50:37 KST 2022
+base.0=/Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
