@@ -2,6 +2,8 @@ package aliahmed.info.customcalender;
 
 import static aliahmed.info.customcalender.Data.eventObjects;
 import android.content.Context;
+import android.content.pm.ResolveInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.StringTokenizer;
 import android.content.Intent; // 화면전환 용도
 
@@ -147,6 +150,33 @@ public class MainActivity extends AppCompatActivity {
     public void addMemo(ArrayList<String> data, int year, int month, int day, String memo){
         data.add(month +"월 "+ day +"일: " + memo);
         check(year, month+1, day);
+    }
+    public void updateIconBadgeCount(Context context, int count) {
+
+        Intent intent = new Intent("android.intent.action.BADGE_COUNT_UPDATE");
+
+        // Component를 정의
+        intent.putExtra("badge_count_package_name", context.getPackageName());
+        intent.putExtra("badge_count_class_name", getLauncherClassName(context));
+
+        // 카운트를 넣어준다.
+        intent.putExtra("badge_count", count);
+
+        // Version이 3.1이상일 경우에는 Flags를 설정하여 준다.
+        // send
+        context.getApplicationContext().sendBroadcast(intent);
+    }
+
+    private String getLauncherClassName(Context context) {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        intent.setPackage(context.getApplicationContext().getPackageName());
+
+        List<ResolveInfo> resolveInfoList = context.getApplicationContext().getPackageManager().queryIntentActivities(intent, 0);
+        if(resolveInfoList != null && resolveInfoList.size() > 0) {
+            return resolveInfoList.get(0).activityInfo.name;
+        }
+        return "";
     }
 
 }

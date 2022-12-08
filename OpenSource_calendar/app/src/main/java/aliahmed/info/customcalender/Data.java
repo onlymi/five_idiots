@@ -16,5 +16,5 @@ public class Data {
 
     public static EventObjects eventObjects = new EventObjects(0, "Today", new Date());
 
-    public static int event_count = 1;
+    public static int event_count = 0;
 }
