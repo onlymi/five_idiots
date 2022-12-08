@@ -39,7 +39,6 @@ public class DatePickerActivity extends AppCompatActivity {
         setResult(RESULT_OK, intent);
         startActivityForResult(intent, 1);
         finish();
-
     }
 
     DatePicker.OnDateChangedListener mOnDateChangedListener = new DatePicker.OnDateChangedListener(){
