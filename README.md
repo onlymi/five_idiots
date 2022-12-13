@@ -3,6 +3,16 @@ Hanyang University - Open Source Team Project
 
 This project is related with aliahmedbd/CustomClickableCalender
 ***
+
+# preview
+<img width="329" alt="스크린샷 2022-12-13 오후 8 46 21" src="https://user-images.githubusercontent.com/78329120/207310182-8a264dce-2efc-4558-a368-359212439398.png">
+<img width="325" alt="스크린샷 2022-12-13 오후 8 46 34" src="https://user-images.githubusercontent.com/78329120/207310191-7dfa1a7e-0707-442a-af8e-b694b0ce24e2.png">
+<img width="326" alt="스크린샷 2022-12-13 오후 8 46 48" src="https://user-images.githubusercontent.com/78329120/207310193-5176dfa3-c3c3-49dd-a7e3-af7f2d786604.png">
+<img width="331" alt="스크린샷 2022-12-13 오후 8 46 56" src="https://user-images.githubusercontent.com/78329120/207310196-4f980476-61ab-423e-81bb-6b09533f28fc.png">
+<img width="326" alt="스크린샷 2022-12-13 오후 8 47 04" src="https://user-images.githubusercontent.com/78329120/207310198-e83304e2-2ce3-4eb6-86da-2c2d88b9ed29.png">
+
+***
+
 # Change Log
 
 2022/11/17 - make repository
