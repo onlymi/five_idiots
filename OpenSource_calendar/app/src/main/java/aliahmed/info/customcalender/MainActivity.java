@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
     // Notification Builder를 만드는 메소드
     private NotificationCompat.Builder getNotificationBuilder(CharSequence memo) {
         NotificationCompat.Builder notifyBuilder = new NotificationCompat.Builder(this, PRIMARY_CHANNEL_ID)
-                .setContentTitle("Today's Memo!!")
+                .setContentTitle("Today's Memo:")
                 .setContentText(memo)
                 .setSmallIcon(R.drawable.white_next_icon);
         return notifyBuilder;
