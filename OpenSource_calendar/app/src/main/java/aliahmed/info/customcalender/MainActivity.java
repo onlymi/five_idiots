@@ -1,9 +1,16 @@
 package aliahmed.info.customcalender;
 
 import static aliahmed.info.customcalender.Data.eventObjects;
+
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.pm.ResolveInfo;
-import android.os.Build;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,10 +20,12 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -34,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     // MemoActivity 에서 MainActivity 의 메소드 사용을 위함
     public static Context mainContext;
+
+    // Channel에 대한 id 생성
+    private static final String PRIMARY_CHANNEL_ID = "primary_notification_channel";
+    // Channel을 생성 및 전달해 줄 수 있는 Manager 생성
+    private NotificationManager mNotificationManager;
+
+    // Notification에 대한 ID 생성
+    private static int NOTIFICATION_ID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +85,31 @@ public class MainActivity extends AppCompatActivity {
                 int day = Integer.parseInt(t.nextToken());
                 String memo = t.nextToken();
                 addMemo(Data.data, year, month, day, memo);
+
+                int current_year;
+                int current_month;
+                int current_day;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    current_year = LocalDate.now().getYear();
+                    current_month = LocalDate.now().getMonthValue();
+                    current_day = LocalDate.now().getDayOfMonth();
+                    System.out.println("test:"+current_year+","+current_month+","+current_day);
+                }
+                else{
+                    current_year = 0;
+                    current_month = 0;
+                    current_day = 0;
+                }
+
+                if(current_year == year && current_month == month+1 && current_day == day){
+                    createNotificationChannel();
+                    CharSequence cs = memo;
+                    sendNotification(cs);
+                    NOTIFICATION_ID++;
+                }
+
             }
+            //updateIconBadgeCount(mainContext, int count);
             br.close();
 
         }catch (FileNotFoundException e){
@@ -113,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Calendar tapedDay = Calendar.getInstance();
                     tapedDay.setTime((Date) adapterView.getAdapter().getItem((int) l));
-                            lastDate = (Date) adapterView.getAdapter().getItem((int) l);
+                    lastDate = (Date) adapterView.getAdapter().getItem((int) l);
                 }
                 try {
                     // 날짜 클릭 시 Memo 화면으로 화면전환
@@ -137,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
         };
         btn = (Button)findViewById(R.id.button_dialog);
         btn.setOnClickListener(listener);
-
     }
 
     public void check(int year, int month, int day){
@@ -151,6 +191,48 @@ public class MainActivity extends AppCompatActivity {
         data.add(month +"월 "+ day +"일: " + memo);
         check(year, month+1, day);
     }
+
+    //채널을 만드는 메소드
+    public void createNotificationChannel()
+    {
+        //notification manager 생성
+        mNotificationManager = (NotificationManager)
+                getSystemService(NOTIFICATION_SERVICE);
+        // 기기(device)의 SDK 버전 확인 ( SDK 26 버전 이상인지 - VERSION_CODES.O = 26)
+        if(android.os.Build.VERSION.SDK_INT
+                >= android.os.Build.VERSION_CODES.O){
+            //Channel 정의 생성자( construct 이용 )
+            NotificationChannel notificationChannel = new NotificationChannel(PRIMARY_CHANNEL_ID
+                    ,"Test Notification",mNotificationManager.IMPORTANCE_HIGH);
+            //Channel에 대한 기본 설정
+            notificationChannel.enableLights(true);
+            notificationChannel.setLightColor(Color.RED);
+            notificationChannel.enableVibration(true);
+            notificationChannel.setDescription("Notification from Mascot");
+            // Manager을 이용하여 Channel 생성
+            mNotificationManager.createNotificationChannel(notificationChannel);
+        }
+
+    }
+
+    // Notification Builder를 만드는 메소드
+    private NotificationCompat.Builder getNotificationBuilder(CharSequence memo) {
+        NotificationCompat.Builder notifyBuilder = new NotificationCompat.Builder(this, PRIMARY_CHANNEL_ID)
+                .setContentTitle("Today's Memo!!")
+                .setContentText(memo)
+                .setSmallIcon(R.drawable.white_next_icon);
+        return notifyBuilder;
+    }
+
+    // Notification을 보내는 메소드
+    public void sendNotification(CharSequence memo){
+        // Builder 생성
+        NotificationCompat.Builder notifyBuilder = getNotificationBuilder(memo);
+        // Manager를 통해 notification 디바이스로 전달
+        mNotificationManager.notify(NOTIFICATION_ID,notifyBuilder.build());
+
+    }
+
     public void updateIconBadgeCount(Context context, int count) {
 
         Intent intent = new Intent("android.intent.action.BADGE_COUNT_UPDATE");
