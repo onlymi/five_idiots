@@ -2,14 +2,10 @@ package aliahmed.info.customcalender;
 
 import static aliahmed.info.customcalender.Data.eventObjects;
 
-import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.pm.ResolveInfo;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -105,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     createNotificationChannel();
                     CharSequence cs = memo;
                     sendNotification(cs);
-                    NOTIFICATION_ID++;
+                    NOTIFICATION_ID += 1;
                 }
 
             }
