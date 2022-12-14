@@ -645,6 +645,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ic_android_background
+drawable ic_android_foreground
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable layout_status_round
@@ -699,7 +701,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button
 id buttonPanel
 id button_dialog
 id calendar_date_id
@@ -889,6 +890,8 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout single_cell_layout
 layout support_simple_spinner_dropdown_item
+mipmap ic_android
+mipmap ic_android_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description

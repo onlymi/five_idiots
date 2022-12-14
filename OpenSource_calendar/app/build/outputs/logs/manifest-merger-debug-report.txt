@@ -1,178 +1,178 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/nutria/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nutria/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nutria/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nutria/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/nutria/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nutria/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/nutria/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nutria/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nutria/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nutria/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/judy/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/judy/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/judy/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/judy/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/judy/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/judy/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/judy/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/judy/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/judy/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/judy/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/judy/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/judy/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/judy/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/judy/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/judy/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/judy/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/judy/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/judy/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/judy/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/judy/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:4:5-43
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:4:5-43
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:6:5-33:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nutria/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nutria/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:6:5-33:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/judy/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/judy/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/judy/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/judy/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:12:9-40
 activity#aliahmed.info.customcalender.MainActivity
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:17:27-74
 activity#aliahmed.info.customcalender.MemoActivity
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:21:9-23:39
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:21:9-23:39
 	android:screenOrientation
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:22:13-51
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:22:13-51
 	android:exported
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:23:13-37
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:21:19-47
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:21:19-47
 activity#aliahmed.info.customcalender.PopupActivity
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:29:9-30:95
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:29:9-30:95
 	android:screenOrientation
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:30:47-83
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:30:47-83
 	android:theme
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:30:13-46
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:30:13-46
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:29:19-48
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:29:19-48
 activity#aliahmed.info.customcalender.DatePickerActivity
-ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:9-99
+ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:9-99
 	android:theme
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:54-87
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:54-87
 	android:name
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:19-53
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml:32:19-53
 uses-sdk
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/nutria/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/nutria/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nutria/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nutria/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nutria/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nutria/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nutria/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nutria/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/nutria/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/nutria/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/nutria/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nutria/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nutria/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nutria/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nutria/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/nutria/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/nutria/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nutria/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nutria/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nutria/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nutria/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nutria/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nutria/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nutria/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nutria/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/judy/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/judy/.gradle/caches/transforms-3/6f764d6764fd1560572280ade36a074a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/judy/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/judy/.gradle/caches/transforms-3/466b8074d7ff5d1008f1971ba51a2951/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/judy/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/judy/.gradle/caches/transforms-3/5bda5817c2d3c7a4034191d99db2b3d5/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/judy/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/judy/.gradle/caches/transforms-3/5a10a5d42221b2d85df60608cde22252/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/judy/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/judy/.gradle/caches/transforms-3/eb12f00a73b2d9ebc9dfe125af509ed1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/judy/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/judy/.gradle/caches/transforms-3/aa92256759ef0c53a213da8083e00652/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/judy/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/judy/.gradle/caches/transforms-3/e8b9ddf408c265db5e37cdaf3220a2ae/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/judy/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/judy/.gradle/caches/transforms-3/f6bfb8387aa67fa73508f490ecd23a95/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/judy/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/judy/.gradle/caches/transforms-3/1b2c2bc523e43a8695e5871c17c75f28/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/d9fc0fd948d60bd590ef43b98aaf7ec1/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f33401e088e03b4906c1e1ee487642e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/f9294253ceb16a4605b1f28d26267b69/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/judy/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/judy/.gradle/caches/transforms-3/3d5ce58965b903c0a1e8c29e9c793adb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/judy/.gradle/caches/transforms-3/a33599820413b39306533ebcc3efaada/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/judy/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/judy/.gradle/caches/transforms-3/5494538d61a363f20d03ecac1b94dc16/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/judy/.gradle/caches/transforms-3/a30ee7a61fe7396ebe40d44700d94ec6/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/judy/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/judy/.gradle/caches/transforms-3/cc3b82abf76348c8aa8d82e93666f74c/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/judy/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/judy/.gradle/caches/transforms-3/b1ff8782cfcecfc397dad65b90e9c690/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/af35d399d97042dd6cf76efe70e78b2d/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/judy/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/judy/.gradle/caches/transforms-3/56a60aa11c00550ac2067dc311230fea/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/judy/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/judy/.gradle/caches/transforms-3/5c31521eb266c26ef211a1f53b56b07e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/judy/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/judy/.gradle/caches/transforms-3/66860c319137074465b1f3af9d4ca7e4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/judy/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/judy/.gradle/caches/transforms-3/297513304d2f985dda3a517f5af1ea7c/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/judy/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/judy/.gradle/caches/transforms-3/bf204cc5d1ee021a0b779a40e33c278f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/judy/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/judy/.gradle/caches/transforms-3/f7ca91eab21575eed2a0be5b1b02101f/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/judy/.gradle/caches/transforms-3/0e741046a937ab091b9e076b813b3774/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/judy/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/judy/.gradle/caches/transforms-3/b72326ebc58ae513a4b2ca23b3b41f53/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/nutria/StudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		ADDED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/judy/AndroidStudioProjects/five_idiots/OpenSource_calendar/app/src/main/AndroidManifest.xml

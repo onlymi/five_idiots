@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private NotificationManager mNotificationManager;
 
     // Notification에 대한 ID 생성
-    private static int NOTIFICATION_ID = 0;
-
+    private int NOTIFICATION_ID = 0;
+    private int count_notification = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,16 +72,26 @@ public class MainActivity extends AppCompatActivity {
             BufferedReader br = new BufferedReader(new FileReader(getFilesDir()+"/memo_data.txt"));
             String readStr;
             String str;
+
             while(((str = br.readLine()) != null)){
+                count_notification = 0;
                 readStr = "";
                 readStr += str;
                 StringTokenizer t = new StringTokenizer(readStr, ",");
                 int year = Integer.parseInt(t.nextToken());
                 int month = Integer.parseInt(t.nextToken());
                 int day = Integer.parseInt(t.nextToken());
-                String memo = t.nextToken();
-                addMemo(Data.data, year, month, day, memo);
 
+                String memo;
+
+                try{
+                    memo = t.nextToken();
+                }
+                catch (Exception e){
+                    memo = " ";
+                }
+
+                addMemo(Data.data, year, month, day, memo);
                 int current_year;
                 int current_month;
                 int current_day;
@@ -98,10 +108,12 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(current_year == year && current_month == month+1 && current_day == day){
+                    NOTIFICATION_ID += 1;
+                    count_notification += 1;
                     createNotificationChannel();
                     CharSequence cs = memo;
                     sendNotification(cs);
-                    NOTIFICATION_ID += 1;
+
                 }
 
             }
@@ -216,6 +228,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder notifyBuilder = new NotificationCompat.Builder(this, PRIMARY_CHANNEL_ID)
                 .setContentTitle("Today's Memo:")
                 .setContentText(memo)
+                .setNumber(count_notification)
                 .setSmallIcon(R.drawable.white_next_icon);
         return notifyBuilder;
     }
