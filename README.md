@@ -1,7 +1,7 @@
 # five_idiots
 Hanyang University - Open Source Team Project
 
-This project is related with aliahmedbd/CustomClickableCalender
+This project is based on aliahmedbd/CustomClickableCalender
 ***
 
 # preview
