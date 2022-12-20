@@ -7,6 +7,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.pm.ResolveInfo;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layoutCalender;
     View custom_view;
     Date lastDate;
+    public int selected_year = 0;
+    public int selected_month = 0;
+    public int selected_day = 0;
+    public int count_data = 0;
 
     // 메모추가 버튼
     Button btn;
@@ -116,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
+                count_data++;
             }
             //updateIconBadgeCount(mainContext, int count);
             br.close();
@@ -158,11 +164,15 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("", "hello");
                 } else {
                     Calendar today = Calendar.getInstance();
-                    today.setTime(new java.util.Date());
+                    today.setTime(new Date());
 
                     Calendar tapedDay = Calendar.getInstance();
                     tapedDay.setTime((Date) adapterView.getAdapter().getItem((int) l));
                     lastDate = (Date) adapterView.getAdapter().getItem((int) l);
+                    selected_year = lastDate.getYear()+1900;
+                    selected_month = lastDate.getMonth()+1;
+                    selected_day = lastDate.getDate();
+
                 }
                 try {
                     // 날짜 클릭 시 Memo 화면으로 화면전환
